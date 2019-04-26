@@ -1,0 +1,39 @@
+@import '~@angular/material/theming';
+
+@mixin ngx-bottom-nav-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+
+  ngx-bottom-nav-button:not(.active) {
+    --ngx-bottom-nav-button-color: #{rgba(mat-color($primary), 0.7)};
+  }
+
+  ngx-bottom-nav-button.active {
+    --ngx-bottom-nav-button-active-color: #{mat-color($primary)};
+  }
+
+  ngx-bottom-nav.color-primary {
+    --ngx-bottom-nav-background-color: #{mat-color($primary)};
+  }
+
+  ngx-bottom-nav.color-accent {
+    --ngx-bottom-nav-background-color: #{mat-color($accent)};
+  }
+
+  ngx-bottom-nav.color-warn {
+    --ngx-bottom-nav-background-color: #{mat-color($warn)};
+  }
+
+  ngx-bottom-nav.color-primary ngx-bottom-nav-button,
+  ngx-bottom-nav.color-accent ngx-bottom-nav-button,
+  ngx-bottom-nav.color-warn ngx-bottom-nav-button {
+    --ngx-bottom-nav-button-color: #{rgba(#fff, 0.7)};
+  }
+
+  ngx-bottom-nav.color-primary ngx-bottom-nav-button.active,
+  ngx-bottom-nav.color-accent ngx-bottom-nav-button.active,
+  ngx-bottom-nav.color-warn ngx-bottom-nav-button.active {
+    --ngx-bottom-nav-button-active-color: #fff;
+  }
+}

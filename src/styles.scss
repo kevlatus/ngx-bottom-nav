@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import '../dist/bottom-nav/theming';
+
+@include mat-core();
+
+$bottom-nav-app-primary: mat-palette($mat-indigo);
+$bottom-nav-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$bottom-nav-app-warn: mat-palette($mat-red);
+
+$bottom-nav-app-theme: mat-light-theme($bottom-nav-app-primary, $bottom-nav-app-accent, $bottom-nav-app-warn);
+
+@include angular-material-theme($bottom-nav-app-theme);
+@include ngx-bottom-nav-theme($bottom-nav-app-theme);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "bottom-nav": [
+        "dist/bottom-nav"
+      ],
+      "bottom-nav/*": [
+        "dist/bottom-nav/*"
+      ]
+    }
   }
 }

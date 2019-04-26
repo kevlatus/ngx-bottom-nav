@@ -1,0 +1,21 @@
+:host {
+  --ngx-bottom-nav-background-color: transparent;
+
+  display: block;
+  width: 100%;
+}
+
+
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  height: 56px;
+  padding: 0;
+  background: var(--ngx-bottom-nav-background-color);
+  overflow: hidden;
+}
+
+mat-toolbar ngx-bottom-nav-button {
+  height: 100%;
+  flex: 1 1 auto;
+}

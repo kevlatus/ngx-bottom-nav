@@ -1,0 +1,59 @@
+:host {
+  --ngx-bottom-nav-button-color: rgba(0, 0, 0, 0.6);
+  --ngx-bottom-nav-button-active-color: #000;
+
+  min-width: 80px;
+  max-width: 168px;
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: normal;
+}
+
+:host(.active) {
+  --ngx-bottom-nav-button-color: var(--ngx-bottom-nav-button-active-color);
+}
+
+a {
+  color: var(--ngx-bottom-nav-button-color);
+  text-decoration: none;
+}
+
+.ngx-bottom-nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px 12px 12px 12px;
+  height: calc(100% - 20px);
+}
+
+:host(.active) .ngx-bottom-nav-button:not(.label-hidden) {
+  padding-top: 7px;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+:host(.active) .label {
+  font-size: 13px;
+  line-height: 13px;
+}
+
+//label hidden
+
+:host(:not(.active)) .ngx-bottom-nav-button.label-hidden {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: calc(100% - 32px);
+}
+
+:host(:not(.active)) .label-hidden .label {
+  display: none;
+}

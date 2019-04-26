@@ -134,6 +134,46 @@
           }
         }
       }
+    },
+    "bottom-nav": {
+      "root": "projects/bottom-nav",
+      "sourceRoot": "projects/bottom-nav/src",
+      "projectType": "library",
+      "prefix": "ngx",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/bottom-nav/tsconfig.lib.json",
+            "project": "projects/bottom-nav/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bottom-nav/src/test.ts",
+            "tsConfig": "projects/bottom-nav/tsconfig.spec.json",
+            "karmaConfig": "projects/bottom-nav/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/bottom-nav/tsconfig.lib.json",
+              "projects/bottom-nav/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "bottom-nav-app"
