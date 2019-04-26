@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import {Component} from '@angular/core';
 import {BottomNavItem} from 'bottom-nav';
 
 @Component({
@@ -10,9 +9,7 @@ import {BottomNavItem} from 'bottom-nav';
 export class AppComponent {
   items: BottomNavItem[] = [
     {icon: 'home', label: 'Home', routerLink: ''},
-    {icon: 'help', label: 'Two', routerLink: 'two'},
-    {icon: 'help', label: 'Two', routerLink: 'two'},
-    {icon: 'help', label: 'Two', routerLink: 'two'},
-    // {icon: 'help', label: 'Two', routerLink: 'two'},
+    {icon: 'search', label: 'Search', routerLink: 'search'},
+    {icon: 'forum', label: 'Forum', routerLink: 'forum'},
   ];
 }

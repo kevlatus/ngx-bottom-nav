@@ -2,7 +2,7 @@
   "name": "bottom-nav-app",
   "version": "0.0.0",
   "scripts": {
-    "compodoc": "npx compodoc --disablePrivate -p projects/bottom-nav/tsconfig.lib.json -n \"NGX Bottom Nav Docs\" -d docs --theme material",
+    "compodoc": "npx compodoc --disablePrivateOrInternalSupport -p projects/bottom-nav/tsconfig.lib.json -n \"NGX Bottom Nav Docs\" -d docs --theme material",
     "start": "ng serve",
     "build": "ng build bottom-nav && npm run build:scss",
     "build:scss": "scss-bundle -c scss-bundle.config.json",
