@@ -1,6 +1,6 @@
 {
   "name": "ngx-bottom-nav",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "This library provides components for implementing a Material Design bottom navigation.",
   "author": {
     "name": "Kevin Latusinski",

@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar [color]="color">
   <ngx-bottom-nav-button *ngFor="let i of items" [hideLabel]="hideLabels"
                          [routerLink]="i.routerLink" routerLinkActive="active"
                          [routerLinkActiveOptions]="{exact: true}"
