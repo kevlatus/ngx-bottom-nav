@@ -6,21 +6,21 @@ import {BottomNavModule} from 'bottom-nav';
 import {AppRoutingModule} from './modules/app-routing.module';
 import {AppComponent} from './app.component';
 import {RouteHomeComponent} from './components/route-home/route-home.component';
-import {RouteTwoComponent} from './components/route-two/route-two.component';
-import {BottomNavModule} from '../../projects/bottom-nav/src/lib/bottom-nav.module';
+import {RouteSearchComponent} from './components/route-search/route-search.component';
+import { RouteForumComponent } from './components/route-forum/route-forum.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RouteHomeComponent,
-    RouteTwoComponent
+    RouteSearchComponent,
+    RouteForumComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BottomNavModule,
     BrowserAnimationsModule,
-    BottomNavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,11 +2,13 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
 import {RouteHomeComponent} from '../components/route-home/route-home.component';
-import {RouteTwoComponent} from '../components/route-two/route-two.component';
+import {RouteForumComponent} from '../components/route-forum/route-forum.component';
+import {RouteSearchComponent} from '../components/route-search/route-search.component';
 
 const routes: Routes = [
   {path: '', component: RouteHomeComponent, pathMatch: 'full'},
-  {path: 'two', component: RouteTwoComponent},
+  {path: 'forum', component: RouteForumComponent},
+  {path: 'search', component: RouteSearchComponent},
 ];
 
 @NgModule({

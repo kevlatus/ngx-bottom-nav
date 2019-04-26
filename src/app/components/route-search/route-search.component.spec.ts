@@ -1,20 +1,20 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {RouteHomeComponent} from './route-home.component';
+import {RouteSearchComponent} from './route-search.component';
 
-describe('RouteHomeComponent', () => {
-  let component: RouteHomeComponent;
-  let fixture: ComponentFixture<RouteHomeComponent>;
+describe('RouteSearchComponent', () => {
+  let component: RouteSearchComponent;
+  let fixture: ComponentFixture<RouteSearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [RouteHomeComponent]
+      declarations: [RouteSearchComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RouteHomeComponent);
+    fixture = TestBed.createComponent(RouteSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
