@@ -13,4 +13,9 @@ export interface BottomNavItem {
    * The route where this button navigates to.
    */
   routerLink: string;
+
+  /**
+   * Whether the route should match exactly for this item to be active.
+   */
+  exact?: boolean;
 }
