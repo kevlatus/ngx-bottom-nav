@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: circleci/node:8.9.4-browsers
+    - image: circleci/node:10.16.1-browsers
 
 jobs:
   test:
@@ -16,9 +16,9 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
 
-      - run: npm install
-      - run: npm run lint
-      - run: npm run test -- --no-watch --no-progress
+      - run: yarn
+      - run: yarn lint
+      - run: yarn test -- --no-watch --no-progress
 
       - save_cache:
           paths:
@@ -38,7 +38,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
       - run:
           name: Publish package
-          command: npm run publish
+          command: yarn publish
 
 workflows:
   version: 2
