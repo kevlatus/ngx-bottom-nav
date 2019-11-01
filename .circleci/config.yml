@@ -16,9 +16,9 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
 
-      - run: yarn
-      - run: yarn lint
-      - run: yarn test -- --no-watch --no-progress
+      - run: npm i
+      - run: npm run lint
+      - run: npm run test -- --no-watch --no-progress --browsers=ChromeHeadless
 
       - save_cache:
           paths:
@@ -38,7 +38,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
       - run:
           name: Publish package
-          command: yarn publish
+          command: npm run publish
 
 workflows:
   version: 2
