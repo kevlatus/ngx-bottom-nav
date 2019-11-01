@@ -2,14 +2,6 @@
 # yarn lockfile v1
 
 
-"@angular-devkit/architect@0.803.15":
-  version "0.803.15"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.803.15.tgz#8decc3d948d0258edd7f8368cb7e9718ad39a7c1"
-  integrity sha512-kxDhEPckatii2efN5mqB2bbGvI65K+sV8iR/yVMN5wK8qchvA9ayU0Qudg2xECvwudxfaZnIbJAoCibEkmdzuw==
-  dependencies:
-    "@angular-devkit/core" "8.3.15"
-    rxjs "6.4.0"
-
 "@angular-devkit/architect@0.803.16":
   version "0.803.16"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.803.16.tgz#f51324e05ac5cbb1f10ddf21fd36ed373a72d2aa"
@@ -115,17 +107,6 @@
     "@angular-devkit/architect" "0.803.16"
     "@angular-devkit/core" "8.3.16"
     rxjs "6.4.0"
-
-"@angular-devkit/core@8.3.15":
-  version "8.3.15"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.15.tgz#54629457e81c75952e6075d64214e2ada5e39efa"
-  integrity sha512-FYUYNcggvRm7glfmqsRgBA1N6ubkINVx2nquZZX10AeCIs4MRqlG4UsddFbOvVckIF/4Q+tBK5P/NngpP1zGXA==
-  dependencies:
-    ajv "6.10.2"
-    fast-json-stable-stringify "2.0.0"
-    magic-string "0.25.3"
-    rxjs "6.4.0"
-    source-map "0.7.3"
 
 "@angular-devkit/core@8.3.16":
   version "8.3.16"
@@ -2554,10 +2535,15 @@ core-js@3.2.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.2.1.tgz#cd41f38534da6cc59f7db050fe67307de9868b09"
   integrity sha512-Qa5XSVefSVPRxy2XfUC13WbvqkxhkwB3ve+pgCQveNgYzbM/UxZeu1dcOX/xr4UmfUd+muuvsaxilQzCyUurMw==
 
-core-js@^2.4.0, core-js@^2.5.4:
+core-js@^2.4.0:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
   integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
+
+core-js@^3.3.6:
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.3.6.tgz#6ad1650323c441f45379e176ed175c0d021eac92"
+  integrity sha512-u4oM8SHwmDuh5mWZdDg9UwNVq5s1uqq6ZDLLIs07VY+VJU91i3h4f3K/pgFvtUQPGdeStrZ+odKyfyt4EnKHfA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
