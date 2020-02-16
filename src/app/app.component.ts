@@ -8,7 +8,7 @@ import {BottomNavItem} from 'bottom-nav';
 })
 export class AppComponent {
   items: BottomNavItem[] = [
-    {icon: 'home', label: 'Home', routerLink: ''},
+    {icon: 'home', label: 'Home', routerLink: '', exact: true},
     {icon: 'search', label: 'Search', routerLink: 'search'},
     {icon: 'forum', label: 'Forum', routerLink: 'forum'},
   ];
