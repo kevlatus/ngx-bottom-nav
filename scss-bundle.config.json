@@ -1,7 +1,0 @@
-{
-  "bundlerOptions": {
-    "rootDir": "./",
-    "entryFile": "./projects/bottom-nav/src/lib/_theming.scss",
-    "outFile": "dist/bottom-nav/_theming.scss"
-  }
-}

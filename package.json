@@ -4,8 +4,7 @@
   "scripts": {
     "start": "ng serve",
     "watch": "ng build --project=bottom-nav --watch",
-    "build": "ng build --project=bottom-nav --prod && npm run build:scss && npm run copy-files",
-    "build:scss": "scss-bundle -p scss-bundle.config.json",
+    "build": "ng build --project=bottom-nav --prod && npm run copy-files",
     "test": "ng test --project=bottom-nav",
     "lint": "ng lint --project=bottom-nav",
     "copy-files": "cpx LICENSE dist/bottom-nav && cpx README.md dist/bottom-nav"
