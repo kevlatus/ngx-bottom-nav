@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve",
-    "build": "ng build bottom-nav && npm run build:scss",
+    "watch": "ng build --project=bottom-nav --watch",
+    "build": "ng build --project=bottom-nav --prod && npm run build:scss && npm run copy-files",
     "build:scss": "scss-bundle -p scss-bundle.config.json",
-    "test": "ng test bottom-nav",
-    "lint": "ng lint bottom-nav",
-    "e2e": "ng e2e bottom-nav",
-    "publish": "npm run build && node publish.js",
-    "watch": "ng build --watch bottom-nav"
+    "test": "ng test --project=bottom-nav",
+    "lint": "ng lint --project=bottom-nav",
+    "copy-files": "cpx LICENSE dist/bottom-nav && cpx README.md dist/bottom-nav"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +38,7 @@
     "@types/jasminewd2": "~2.0.7",
     "@types/node": "^13.7.1",
     "codelyzer": "^5.1.2",
+    "cpx": "^1.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.4.1",
