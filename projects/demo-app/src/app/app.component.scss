@@ -1,0 +1,9 @@
+.content {
+  overflow: auto;
+  height: calc(100vh - 56px);
+}
+
+ngx-bottom-nav {
+  position: fixed;
+  bottom: 0;
+}
