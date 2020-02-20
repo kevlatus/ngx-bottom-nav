@@ -1,5 +1,5 @@
 <a target="_blank" href="https://www.npmjs.com/package/ngx-bottom-nav">![](https://img.shields.io/npm/v/ngx-bottom-nav.svg)</a>
-![](https://img.shields.io/circleci/project/github/kevlatus/ngx-bottom-nav/master.svg)
+[![Build Status](https://github.com/kevlatus/ngx-bottom-nav/workflows/Continuous%20Integration/badge.svg)](https://github.com/kevlatus/ngx-bottom-nav/actions)
 
 # Angular Bottom Navigation
 
