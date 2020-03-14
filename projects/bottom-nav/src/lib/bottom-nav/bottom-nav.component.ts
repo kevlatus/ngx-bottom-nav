@@ -1,6 +1,6 @@
 import {Component, HostBinding, Input} from '@angular/core';
 
-import {BottomNavItem} from '../../models/bottom-nav';
+import {BottomNavItem} from '../bottom-nav';
 
 /**
  * This component is a [Material-style bottom navigation bar]{@link https://material.io/design/components/bottom-navigation.html}.

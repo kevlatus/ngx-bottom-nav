@@ -1,5 +1,7 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
-import {MatIconModule, MatRippleModule, MatToolbarModule} from '@angular/material';
+import { MatRippleModule } from '@angular/material/core';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import {RouterModule} from '@angular/router';
 
 import {BottomNavComponent} from './bottom-nav.component';
