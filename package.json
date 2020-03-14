@@ -23,7 +23,7 @@
     "@angular/router": "~9.0.6",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
+    "tslib": "^1.11.1",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
     "protractor": "~5.4.3",
     "scss-bundle": "^3.0.2",
     "ts-node": "~8.6.2",
-    "tslib": "^1.9.0",
+    "tslib": "^1.11.1",
     "tslint": "~5.20.1",
     "typescript": "~3.7.5"
   }
