@@ -5,7 +5,7 @@
     "start": "ng serve --project=demo-app",
     "watch": "ng build --watch",
     "build": "ng build --prod && npm run copy-files",
-    "test": "ng test",
+    "test": "ng test bottom-nav",
     "lint": "ng lint",
     "copy-files": "cpx LICENSE dist/bottom-nav && cpx README.md dist/bottom-nav"
   },
