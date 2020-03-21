@@ -5,23 +5,23 @@
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
 
-  ngx-bottom-nav-button:not(.active) {
+  button[ngx-bottom-nav]:not(.active) {
     --ngx-bottom-nav-button-color: #{rgba(mat-color($primary), 0.7)};
   }
 
-  ngx-bottom-nav-button.active {
+  button[ngx-bottom-nav].active {
     --ngx-bottom-nav-button-active-color: #{mat-color($primary)};
   }
 
-  ngx-bottom-nav.color-primary ngx-bottom-nav-button,
-  ngx-bottom-nav.color-accent ngx-bottom-nav-button,
-  ngx-bottom-nav.color-warn ngx-bottom-nav-button {
+  ngx-bottom-nav.color-primary button[ngx-bottom-nav],
+  ngx-bottom-nav.color-accent button[ngx-bottom-nav],
+  ngx-bottom-nav.color-warn button[ngx-bottom-nav] {
     --ngx-bottom-nav-button-color: #{rgba(#fff, 0.7)};
   }
 
-  ngx-bottom-nav.color-primary ngx-bottom-nav-button.active,
-  ngx-bottom-nav.color-accent ngx-bottom-nav-button.active,
-  ngx-bottom-nav.color-warn ngx-bottom-nav-button.active {
-    --ngx-bottom-nav-button-active-color: #fff;
+  ngx-bottom-nav.color-primary button[ngx-bottom-nav].active,
+  ngx-bottom-nav.color-accent button[ngx-bottom-nav].active,
+  ngx-bottom-nav.color-warn button[ngx-bottom-nav].active {
+    --ngx-bottom-nav-button-active-color: #fff !important;
   }
 }

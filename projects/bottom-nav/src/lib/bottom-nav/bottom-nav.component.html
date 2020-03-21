@@ -1,11 +1,14 @@
 <mat-toolbar [color]="color">
-  <ngx-bottom-nav-button
+  <button
+    ngx-bottom-nav
     *ngFor="let i of items"
     [hideLabel]="hideLabels"
     [routerLink]="i.routerLink"
     routerLinkActive="active"
     [routerLinkActiveOptions]="{exact: i.exact}"
     [label]="i.label"
-    [icon]="i.icon"
-  ></ngx-bottom-nav-button>
+  >
+    <mat-icon ngxBottomNavIcon>{{i.icon}}</mat-icon>
+  </button>
+  <!-- <ng-content select="[ngx-bottom-nav]"></ng-content> -->
 </mat-toolbar>

@@ -2,4 +2,8 @@
   <router-outlet></router-outlet>
 </div>
 
-<ngx-bottom-nav [items]="items" color="primary" class="mat-elevation-z8"></ngx-bottom-nav>
+<ngx-bottom-nav color="primary" class="mat-elevation-z8" [items]="items">
+  <button ngx-bottom-nav label="Home">
+    <mat-icon ngxBottomNavIcon>edit</mat-icon>
+  </button>
+</ngx-bottom-nav>

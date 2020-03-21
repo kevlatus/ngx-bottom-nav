@@ -1,11 +1,2 @@
-<a
-  class="ngx-bottom-nav-button"
-  [class.label-hidden]="hideLabel"
-  matRipple
-  [matRippleCentered]="true"
-  matRippleRadius="48"
-  [matRippleUnbounded]="true"
->
-  <mat-icon>{{icon}}</mat-icon>
-  <div class="label">{{label}}</div>
-</a>
+<ng-content select="[ngxBottomNavIcon]"></ng-content>
+<div class="label">{{label}}</div>

@@ -11,7 +11,7 @@ import { BottomNavButtonComponent } from './bottom-nav-button/bottom-nav-button.
 @NgModule({
   declarations: [
     BottomNavComponent, //
-    BottomNavButtonComponent
+    BottomNavButtonComponent,
   ],
   imports: [
     CommonModule,
@@ -20,6 +20,9 @@ import { BottomNavButtonComponent } from './bottom-nav-button/bottom-nav-button.
     MatToolbarModule,
     RouterModule
   ],
-  exports: [BottomNavComponent]
+  exports: [
+    BottomNavComponent, //
+    BottomNavButtonComponent
+  ]
 })
 export class BottomNavModule {}

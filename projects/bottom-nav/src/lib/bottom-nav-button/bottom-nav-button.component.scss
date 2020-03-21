@@ -1,28 +1,24 @@
+@mixin button-reset {
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
 :host {
+  @include button-reset;
+
   --ngx-bottom-nav-button-color: rgb(100, 100, 100);
   --ngx-bottom-nav-button-active-color: #000;
 
   min-width: 80px;
   max-width: 168px;
 
-  cursor: pointer;
-  outline: none;
-  border: none;
   background: transparent;
-  -webkit-tap-highlight-color: transparent;
-  font-weight: normal;
-}
-
-:host(.active) {
-  --ngx-bottom-nav-button-color: var(--ngx-bottom-nav-button-active-color);
-}
-
-a {
-  color: var(--ngx-bottom-nav-button-color);
   text-decoration: none;
-}
 
-.ngx-bottom-nav-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +28,15 @@ a {
   height: calc(100% - 20px);
 }
 
-:host(.active) .ngx-bottom-nav-button:not(.label-hidden) {
+:host(:not(.active)) {
+  color: var(--ngx-bottom-nav-button-color);
+}
+
+:host(.active) {
+  --ngx-bottom-nav-button-color: var(--ngx-bottom-nav-button-active-color);
+}
+
+:host(.active:not(.label-hidden)) {
   padding-top: 7px;
 }
 
@@ -46,14 +50,12 @@ a {
   line-height: 13px;
 }
 
-//label hidden
-
-:host(:not(.active)) .ngx-bottom-nav-button.label-hidden {
+:host(.label-hidden:not(.active)) {
   padding-top: 16px;
   padding-bottom: 16px;
   height: calc(100% - 32px);
 }
 
-:host(:not(.active)) .label-hidden .label {
+:host(.label-hidden:not(.active)) .label {
   display: none;
 }

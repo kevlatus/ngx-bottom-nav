@@ -1,8 +1,6 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
-import { MatRippleModule } from '@angular/material/core';
-import { MatIconModule } from '@angular/material/icon';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {BottomNavButtonComponent} from './bottom-nav-button.component';
+import { BottomNavButtonComponent } from './bottom-nav-button.component';
 
 describe('BottomNavButtonComponent', () => {
   let component: BottomNavButtonComponent;
@@ -10,15 +8,9 @@ describe('BottomNavButtonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        BottomNavButtonComponent
-      ],
-      imports: [
-        MatIconModule,
-        MatRippleModule,
-      ]
+      declarations: [ BottomNavButtonComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
