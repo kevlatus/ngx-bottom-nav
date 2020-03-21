@@ -2,11 +2,11 @@
   "name": "bottom-nav-app",
   "version": "0.0.0",
   "scripts": {
-    "start": "ng serve",
-    "watch": "ng build --project=bottom-nav --watch",
-    "build": "ng build --project=bottom-nav --prod && npm run copy-files",
-    "test": "ng test --project=bottom-nav",
-    "lint": "ng lint --project=bottom-nav",
+    "start": "ng serve --project=demo-app",
+    "watch": "ng build --watch",
+    "build": "ng build --prod && npm run copy-files",
+    "test": "ng test",
+    "lint": "ng lint",
     "copy-files": "cpx LICENSE dist/bottom-nav && cpx README.md dist/bottom-nav"
   },
   "private": true,
