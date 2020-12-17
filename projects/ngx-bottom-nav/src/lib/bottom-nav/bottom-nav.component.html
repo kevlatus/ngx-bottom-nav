@@ -5,10 +5,10 @@
     [hideLabel]="hideLabels"
     [routerLink]="i.routerLink"
     routerLinkActive="active"
-    [routerLinkActiveOptions]="{exact: i.exact}"
+    [routerLinkActiveOptions]="{ exact: i.exact }"
     [label]="i.label"
   >
-    <mat-icon ngxBottomNavIcon>{{i.icon}}</mat-icon>
+    <mat-icon ngxBottomNavIcon>{{ i.icon }}</mat-icon>
   </button>
-  <!-- <ng-content select="[ngx-bottom-nav]"></ng-content> -->
+  <ng-content select="[ngx-bottom-nav]"></ng-content>
 </mat-toolbar>

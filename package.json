@@ -1,13 +1,14 @@
 {
-  "name": "bottom-nav-app",
+  "name": "ngx-bottom-nav-app",
   "version": "0.0.0",
   "scripts": {
+    "build": "ng build",
     "start": "ng serve --project=demo-app",
     "watch": "ng build --watch",
-    "build": "ng build --prod && npm run copy-files",
-    "test": "ng test bottom-nav",
+    "test": "ng test ngx-bottom-nav",
+    "test:demo": "ng test demo-app",
     "lint": "ng lint",
-    "copy-files": "cpx LICENSE dist/bottom-nav && cpx README.md dist/bottom-nav"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
