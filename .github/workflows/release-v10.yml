@@ -1,8 +1,8 @@
-name: Release latest (v11)
+name: Release v10
 on:
   push:
     branches:
-      - releases/v11.*
+      - releases/v10.*
 
 jobs:
   publish:
@@ -24,7 +24,7 @@ jobs:
         run: npm run build -- --prod
 
       # - name: run library tests
-      #   run: npm run test -- --coverage
+      #   run: npm run test
 
       # - name: run demo tests
       #   run: npm run test:demo
@@ -34,13 +34,8 @@ jobs:
           cp LICENSE dist/ngx-bottom-nav
           cp README.md dist/ngx-bottom-nav
 
-      # - name: Upload coverage to Coveralls
-      #   uses: coverallsapp/github-action@master
-      #   with:
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: publish to npm
         working-directory: ./dist/ngx-bottom-nav
-        run: npm publish
+        run: npm publish --tag v10-lts
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
