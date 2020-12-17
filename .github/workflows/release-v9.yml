@@ -23,11 +23,11 @@ jobs:
       - name: build library
         run: npm run build -- --prod
 
-      - name: run library tests
-        run: npm run test
+      # - name: run library tests
+      #   run: npm run test
 
-      - name: run demo tests
-        run: npm run test:demo
+      # - name: run demo tests
+      #   run: npm run test:demo
 
       - name: copy README and LICENSE
         run: |
