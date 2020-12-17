@@ -1,0 +1,28 @@
+name: Lint & Test
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+
+      - run: npm install
+
+      - name: run linter
+        run: npm run lint
+
+      - name: build library
+        run: npm run build -- --prod
+
+      - name: run library tests
+        run: npm run test
+
+      - name: run demo tests
+        run: npm run test:demo

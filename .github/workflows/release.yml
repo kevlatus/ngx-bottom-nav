@@ -1,0 +1,46 @@
+name: Release latest (v10)
+on:
+  push:
+    branches:
+      - releases/v10.*
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - uses: actions/setup-node@master
+        with:
+          registry-url: 'https://registry.npmjs.org/'
+
+      - run: npm install
+
+      - name: run linter
+        run: npm run lint
+
+      - name: build library
+        run: npm run build -- --prod
+
+      - name: run library tests
+        run: npm run test -- --coverage
+
+      - name: run demo tests
+        run: npm run test:demo
+
+      - name: copy README and LICENSE
+        run: |
+          cp LICENSE dist/ngx-bottom-nav
+          cp README.md dist/ngx-bottom-nav
+
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: publish to npm
+        working-directory: ./dist/ngx-bottom-nav
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
