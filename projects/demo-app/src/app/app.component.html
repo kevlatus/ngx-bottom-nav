@@ -2,8 +2,16 @@
   <router-outlet></router-outlet>
 </div>
 
-<ngx-bottom-nav color="primary" class="mat-elevation-z8" [items]="items">
-  <button ngx-bottom-nav label="Home">
-    <mat-icon ngxBottomNavIcon>edit</mat-icon>
+<ngx-bottom-nav color="primary" class="mat-elevation-z8">
+  <button ngx-bottom-nav label="Home" routerLink="/" exact="true">
+    <mat-icon ngxBottomNavIcon>home</mat-icon>
+  </button>
+
+  <button ngx-bottom-nav label="Search" routerLink="/search">
+    <mat-icon ngxBottomNavIcon>search</mat-icon>
+  </button>
+
+  <button ngx-bottom-nav label="Forum" routerLink="/forum">
+    <mat-icon ngxBottomNavIcon>forum</mat-icon>
   </button>
 </ngx-bottom-nav>
