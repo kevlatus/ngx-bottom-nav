@@ -1,6 +1,6 @@
 {
   "name": "ngx-bottom-nav",
-  "version": "10.0.0",
+  "version": "11.0.0",
   "description": "This library provides components for implementing a Material Design bottom navigation.",
   "author": {
     "name": "Kevin Latusinski",
@@ -11,9 +11,9 @@
     "url": "https://github.com/latusinski/ngx-bottom-nav"
   },
   "peerDependencies": {
-    "@angular/common": "10",
-    "@angular/core": "10",
-    "@angular/material": "10"
+    "@angular/common": "11",
+    "@angular/core": "11",
+    "@angular/material": "11"
   },
   "dependencies": {
     "tslib": "^2.0.0"
