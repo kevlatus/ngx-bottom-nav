@@ -1,2 +1,10 @@
-<ng-content select="[ngxBottomNavIcon]"></ng-content>
-<div class="label">{{label}}</div>
+<div
+  class="ngx-bottom-nav-button"
+  [routerLink]="routerLink"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: exact }"
+  [class.label-hidden]="hideLabel"
+>
+  <ng-content select="[ngxBottomNavIcon]"></ng-content>
+  <div class="label">{{ label }}</div>
+</div>

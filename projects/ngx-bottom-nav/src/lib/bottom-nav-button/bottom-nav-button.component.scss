@@ -28,11 +28,15 @@
   height: calc(100% - 20px);
 }
 
-:host(:not(.active)) {
+.ngx-bottom-nav-button:focus {
+  outline: none;
+}
+
+.ngx-bottom-nav-button:not(.active) {
   color: var(--ngx-bottom-nav-button-color);
 }
 
-:host(.active) {
+.ngx-bottom-nav-button.active {
   --ngx-bottom-nav-button-color: var(--ngx-bottom-nav-button-active-color);
 }
 

@@ -4,9 +4,8 @@
     *ngFor="let i of items"
     [hideLabel]="hideLabels"
     [routerLink]="i.routerLink"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: i.exact }"
     [label]="i.label"
+    [exact]="i.exact"
   >
     <mat-icon ngxBottomNavIcon>{{ i.icon }}</mat-icon>
   </button>
