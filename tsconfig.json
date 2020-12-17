@@ -21,10 +21,10 @@
     ],
     "paths": {
       "ngx-bottom-nav": [
-        "dist/bottom-nav"
+        "dist/ngx-bottom-nav"
       ],
       "ngx-bottom-nav/*": [
-        "dist/bottom-nav/*"
+        "dist/ngx-bottom-nav/*"
       ]
     }
   }
