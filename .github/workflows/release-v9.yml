@@ -36,6 +36,6 @@ jobs:
 
       - name: publish to npm
         working-directory: ./dist/ngx-bottom-nav
-        run: npm publish --tag v9
+        run: npm publish --tag v9-lts
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
