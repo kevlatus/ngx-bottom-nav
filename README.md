@@ -1,5 +1,7 @@
 <a target="_blank" href="https://www.npmjs.com/package/ngx-bottom-nav">![](https://img.shields.io/npm/v/ngx-bottom-nav.svg)</a>
-[![Build Status](https://github.com/kevlatus/ngx-bottom-nav/workflows/Continuous%20Integration/badge.svg)](https://github.com/kevlatus/ngx-bottom-nav/actions)
+
+> [!WARNING]
+> This library is no longer maintained.
 
 # Angular Bottom Navigation
 
